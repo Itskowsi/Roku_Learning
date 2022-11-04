@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<component name="imagesScene" extends="Scene" >
+	<script type="text/brightscript" uri="pkg:/components/RectLabelPoster.brs"></script>
+
+	<children>
+		<Poster
+			id="bird"
+			uri="pkg:/images/bird.jpg"
+			width="220"
+			height="100" 
+			translation="[70,290]"/>
+		<Poster
+			id="flower"
+			uri="pkg:/images/flower.jpg"
+			width="220"
+			height="100"
+			translation="[300,290]"/>
+		<Poster
+			id="nature"
+			uri="pkg:/images/nature.jpg"
+			width="220"
+			height="100"
+			translation="[530,290]" />
+		<Poster
+			id="sky"
+			uri="pkg:/images/sky.jpg"
+			width="220"
+			height="100"
+			translation="[760,290]" />
+		<Poster
+			id="water"
+			uri="pkg:/images/water.jpg"
+			width="220"
+			height="100"
+			translation="[990,290]" />
+		<Rectangle 
+			id = "Rect1" 
+			color = "0x0000" 
+			width = "220" 
+			height = "30" 
+			translation="[70,400]" />
+		<Rectangle 
+			id = "Rect2" 
+			color = "0x0000" 
+			width = "220" 
+			height = "30" 
+			translation="[300,400]"/>
+		<Rectangle 
+			id = "Rect3" 
+			color = "0x0000" 
+			width = "220" 
+			height = "30" 
+			translation="[530,400]" />
+		<Rectangle 
+			id = "Rect4" 
+			color = "0x0000" 
+			width = "220" 
+			height = "30" 
+			translation="[760,400]" />
+		<Rectangle 
+			id = "Rect5" 
+			color = "0x0000" 
+			width = "220" 
+			height = "30" 
+			translation="[990,400]" />
+		<Label
+			id="label1"
+			width = "220" 
+			height = "30" 
+			text="Bird"
+			horizAlign = "center" 
+			vertAlign = "center"
+			translation="[70,400]"  />
+		<Label
+			id="label2"
+			width = "220" 
+			height = "30" 
+			text="Flower"
+			horizAlign = "center" 
+			vertAlign = "center"
+			translation="[300,400]"  />
+		<Label
+			id="label3"
+			width = "220" 
+			height = "30" 
+			text="Mountains"
+			horizAlign = "center" 
+			vertAlign = "center" 
+			translation="[530,400]" />
+		<Label
+			id="label4"
+			width = "220" 
+			height = "30" 
+			text="Sky"
+			horizAlign = "center" 
+			vertAlign = "center" 
+			translation="[760,400]" />
+		<Label
+			id="label5"
+			width = "220" 
+			height = "30" 
+			text="Water Drops"
+			horizAlign = "center" 
+			vertAlign = "center"
+			translation="[990,400]"  />
+	</children>
+</component>
