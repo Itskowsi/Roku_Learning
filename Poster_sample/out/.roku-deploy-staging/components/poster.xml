@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<component name="posterScene" extends="Scene" >
+	<script type="text/brightscript" uri="pkg:/components/poster.brs"></script>
+
+	<children>
+		<Poster
+			id="bird"
+			uri="pkg:/images/bird.jpg"
+			width="220"
+			height="100" 
+			translation="[0,0]"/>
+		<Poster
+			id="flower"
+			uri="pkg:/images/flower.jpg"
+			width="220"
+			height="100"
+			translation="[230,145]"/>
+		<Poster
+			id="nature"
+			uri="pkg:/images/nature.jpg"
+			width="220"
+			height="100"
+			translation="[460,290]" />
+		<Poster
+			id="sky"
+			uri="pkg:/images/sky.jpg"
+			width="220"
+			height="100"
+			translation="[690,435]" />
+		<Poster
+			id="water"
+			uri="pkg:/images/water.jpg"
+			width="220"
+			height="100"
+			translation="[920,580]" />
+	</children>
+</component>

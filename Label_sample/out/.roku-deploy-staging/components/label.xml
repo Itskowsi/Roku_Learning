@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<component name="labelScene" extends="Scene" >
+	<script type="text/brightscript" uri="pkg:/components/label.brs"></script>
+	<children>
+		<Label
+			id="label1"
+			height="60"
+			width="100"
+			text = "One- 1"
+			translation="[590,240]"  />
+		<Label
+			id="label2"
+			height="60"
+			width="100"
+			text = "Two- 2"
+			translation="[590,300]"  />
+		<Label
+			id="label3"
+			height="60"
+			width="100"
+			text = "Three-3"
+			translation="[590,360]" />
+		<Label
+			id="label4"
+			height="60"
+			width="100"
+			text = "Four- 4"
+			translation="[590,420]" />
+		<Label
+			id="label5"
+			height="60"
+			width="100"
+			text = "Five- 5"
+			translation="[590,480]" />
+	</children>
+</component>

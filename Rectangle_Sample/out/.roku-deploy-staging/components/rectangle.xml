@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<component name="rectangleScene" extends="Scene" >
+<script type="text/brightscript" uri="pkg:/components/rectangle.brs"></script>
+	<children>
+		<Rectangle 
+				id = "Rect1" 
+				color = "0x0000FFFF" 
+				width = "1280" 
+				height = "60" 
+				translation = "[0,20]" />
+			<Rectangle 
+				id = "Rect2" 
+				color = "0x0000FFFF" 
+				width = "1280" 
+				height = "60" 
+				translation = "[0,164]" />
+			<Rectangle 
+				id = "Rect3" 
+				color = "0x0000FFFF" 
+				width = "1280" 
+				height = "60" 
+				translation = "[0,308]" />
+			<Rectangle 
+				id = "Rect4" 
+				color = "0x0000FFFF" 
+				width = "1280" 
+				height = "60" 
+				translation = "[0,452]" />
+			<Rectangle 
+				id = "Rect5" 
+				color = "0x0000FFFF" 
+				width = "1280" 
+				height = "60" 
+				translation = "[0,596]" />
+	</children>
+</component>
