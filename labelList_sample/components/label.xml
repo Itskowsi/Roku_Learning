@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<component name = "LabelListExample" extends = "Scene" initialFocus = "exampleLabelList" >
+<script type="text/brightscript" uri="pkg:/components/label.brs"></script>
+
+	<children>
+		<LabelList id = "exampleLabelList" >
+			<ContentNode role = "content" >
+				<ContentNode title = "Renderable Nodes" />
+				<ContentNode title = "Z-Order/Parent-Child" />
+				<ContentNode title = "Animations" />
+				<ContentNode title = "Events and Observers" />
+			</ContentNode>
+		</LabelList>
+	</children>
+</component>

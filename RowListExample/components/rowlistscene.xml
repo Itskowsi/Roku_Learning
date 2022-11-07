@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8" ?> 
+<component name = "RowListExample" extends = "Scene" initialFocus = "exampleRowList" >
+  <script type = "text/brightscript" uri="pkg:/components/rowlistscene.brs"></script>
+
+  <children >
+    <RowList 
+      id = "exampleRowList" 
+      translation = "[ 130, 160 ]" 
+      itemComponentName = "RowListItem" 
+      numRows = "4" 
+      itemSize = "[ 1600, 500 ]" 
+      rowItemSize = "[ [240, 10] ]" 
+      itemSpacing = "[ 0, 40 ]" 
+      showRowLabel = "[ true ]" 
+      drawFocusFeedback = "false" 
+      vertFocusAnimationStyle = "fixedFocus" 
+      rowFocusAnimationStyle = "fixedFocusWrap" />
+
+  </children>
+</component>
