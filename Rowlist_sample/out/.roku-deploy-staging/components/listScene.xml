@@ -8,7 +8,7 @@
         itemComponentName="RowListItem"
         numRows="5"
         itemSize="[1600,500]"
-        rowItemSize="[ [200,10] ]"
+        rowItemSize="[ [240,5] ]"
         itemSpacing="[0,40]"
         showRowLabel="true"
         drawFocusFeedback="false"

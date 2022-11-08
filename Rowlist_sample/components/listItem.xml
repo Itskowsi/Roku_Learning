@@ -10,14 +10,13 @@
         <Poster
             id = "itemposter"
             translation="[10, 10]"
-            width="150"
+            width="200"
             height="300"
             scaleRotateCenter = "[ 75.0, 150.0 ]">
         <Rectangle
             id="itemMask"
             color="0x000000"
-            opacity="0.75"
-            width="150"
+            width="200"
             height="300"
             scaleRotateCenter = "[ 75.0, 150.0 ]"/>
         </Poster>
