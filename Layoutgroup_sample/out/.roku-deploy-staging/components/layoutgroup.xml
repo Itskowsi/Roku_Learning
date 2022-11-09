@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="LayoutGroupNode" extends="Scene" initialFocus = "Button">
+    <script type="text/brightscript" uri="layoutgroup.brs" />
+    <children>
+        <Group id="group">
+            <LayoutGroup 
+                id="layoutgrp"
+                layoutDirection="vert"
+                horizAlignment="center"
+                visible = "true"
+                translation="[900,115]">
+                    <label
+                        id="title"
+                        width="300"
+                        height="50"
+                        text="Image"
+                        horizAlign = "center" />
+                    <poster
+                        id="image"
+                        width="300"
+                        height="300"
+                        uri="pkg:/images/img1.jpg" />
+            </LayoutGroup>
+        </Group>
+        <Button 
+            id = "Button"
+            translation = "[ 450, 200 ]"
+            text="Hide Image" />
+    </children>
+</component>

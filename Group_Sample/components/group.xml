@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="GroupNode" extends="Scene" initialFocus = "groupButton">
+    <script type="text/brightscript" uri="group.brs" />
+    <children>
+        <Group id="group">
+            <label
+                id="title"
+                width="300"
+                height="50"
+                text="Image"
+                horizAlign = "center"
+                translation="[450,60]" />
+            <poster
+                id="image"
+                width="300"
+                height="300"
+                uri="pkg:/images/img7.jpg"
+                translation="[ 450, 110 ]" />
+        </Group>
+        <ButtonGroup 
+            id = "groupButton"
+            translation = "[ 470, 500 ]" />
+    </children>
+</component>
