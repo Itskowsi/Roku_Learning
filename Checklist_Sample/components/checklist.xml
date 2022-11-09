@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+ <component name="ChecklistNode" extends="Scene" initialFocus = "checklist">
+    <script type="text/brightscript" uri="pkg:/components/checklist.brs" />
+    <children>
+        <label
+            id="title"
+            text="CheckList"
+            width="200"
+            height="20"
+            translation="[590,240]" />
+        <CheckList id="checklist">
+            <ContentNode role="content">
+                <ContentNode title="Rectangle Node"/>
+                <ContentNode title="Label Node"/>
+                <ContentNode title="Poster Node"/>
+                <ContentNode title="Renderable Node"/>
+            </ContentNode>
+        </CheckList>
+    </children>
+</component>
+
