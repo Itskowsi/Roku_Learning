@@ -1,0 +1,161 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="HomePage" extends="Group">
+    <script type="text/brightscript" uri="homePage.brs" />
+    <children>
+        <group id="homePageGrp" visible="true">
+            <Group
+                id="groupNode">
+                <poster
+                    id="image"
+                    width="1280"
+                    height="720"
+                    uri="pkg:/images/DeathNote.png">
+                    <Rectangle
+                        id="imageMask"
+                        width="1280"
+                        height="720"
+                        color="0x000000"
+                        opacity="0.5"/>                
+                </poster>
+            </Group>
+            <label
+                id="text1"
+                text="Death Note"
+                width="1280"
+                height="500"
+                translation="[50,340]"
+                color="0xffffff">  
+                <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Bold.otf" size="30"/>
+            </label>
+
+            <label
+                id="text2"
+                text="2006 | 1 Season | Mystery &amp; Thriller Anime"
+                width="1280"
+                height="500"
+                translation="[50,380]"
+                color="0x808080">  
+                <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Bold.otf" size="10"/>
+            </label>
+
+            <label
+                id="text3"
+                text="When a Japanese high schooler comes into possession of a mystical notebook, he finds he has the power to kill anybody whose name he enters in it."
+                width="400"
+                wrap="true"
+                lineSpacing="0.0"
+                maxline="2"
+                height="500"
+                translation="[50,400]"
+                color="0xffffff">  
+                <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Bold.otf" size="10"/>
+            </label> 
+            <Rectangle id="whiteRect" height="0" width="0" color="#ffffff" translation="[0,0]">
+                <Rectangle id="blackRect" height="0" width="0" color="#000000" translation="[2,2]"/>
+            </Rectangle>  
+            <Group id="Button">                 
+                <Rectangle
+                    id="playbtnrect"
+                    width="170"
+                    height="40"
+                    color="0xEF6C2E"
+                    translation="[50,450]">
+                </Rectangle>    
+                <Label 
+                    id="playLabel" 
+                    text="START WATCHING" 
+                    width="300" 
+                    translation="[95,462]"
+                    color="0x000000">
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="12"/>
+                </Label>
+                <Button 
+                    minwidth="170"
+                    height="40"
+                    id="playButton" 
+                    iconUri="pkg:/images/PlayButton.png" 
+                    translation="[50,450]"
+                    focusBitmapUri="pkg:/images/tra.png"
+                    focusedIconUri="pkg:/images/tra.png"/>
+
+                <Rectangle
+                    id="moreinforect"
+                    width="170"
+                    height="40"
+                    color="0x000000"
+                    translation="[250,450]">
+                </Rectangle>
+                <Label 
+                    id="moreinfolabel" 
+                    text="MORE INFO" 
+                    width="300" 
+                    color="0xffffff"
+                    translation="[300,462]">
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="12"/>
+                </Label>
+                <Button 
+                    id="moreinfo"
+                    minwidth="170"
+                    height="40"
+                    focusBitmapUri="pkg:/images/tra.png"
+                    iconUri="pkg:/images/tra.png"
+                    focusedIconUri="pkg:/images/tra.png"
+                    translation="[250,450]" />
+            </Group>
+            <Group id="popup" visible="false">
+                <Rectangle
+                    id="popupBG"
+                    color="0x00000"
+                    width="800"
+                    height="300"
+                    translation="[240,240]" >
+                    <label
+                        id="titlecontent"
+                        text="Detail Description"
+                        color="0xEF6C2E"
+                        translation="[20,20]" >
+                        <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="25"/>
+                    </label>
+                    <label
+                        id="contentLabel"
+                        width="730"
+                        wrap="true"
+                        maxline="10"
+                        text="A high school student named Light Turner discovers a mysterious notebook that has the power to kill anyone whose name is written within its pages, and launches a secret crusade to rid the world of criminals."
+                        color="0xffffff"
+                        translation="[40,60]" >
+                        <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="20"/>
+                    </label>
+                    <Rectangle id="whiteRect" height="47" width="178" color="#ffffff" translation="[296,227]">
+                        <Rectangle id="blackRect" height="43" width="174" color="#000000" translation="[2,2]"/>
+                    </Rectangle> 
+                    <Rectangle
+                        id="cancelRect"
+                        width="170"
+                        height="40"
+                        color="0xEF6C2E"
+                        translation="[300,230]">
+                    
+                    <Label 
+                        id="cancelLabel" 
+                        text="Cancel" 
+                        width="170" 
+                        height="40"
+                        color="0x000000"
+                        horizAlign = "center"
+                        vertAlign = "center">
+                        <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="12"/>
+                    </Label>
+                    <Button 
+                        id="cancelBtn"
+                        minwidth="170"
+                        height="40"
+                        iconUri="pkg:/images/tra.png"
+                        focusBitmapUri="pkg:/images/tra.png"
+                        focusedIconUri="pkg:/images/tra.png" />
+                    </Rectangle>
+                </Rectangle>
+            </Group>
+        </group>
+    </children>
+</component>

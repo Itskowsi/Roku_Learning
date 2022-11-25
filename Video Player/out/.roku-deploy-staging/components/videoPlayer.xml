@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="VideoPlayer" extends="Group" initialFocus="playBtn">
+    <script type="text/brightscript" uri="videoPlayer.brs" />
+    <children>
+        <Group id="buttonGroup" visible="true">
+            <rectangle
+                id="BgRect"
+                width="1280"
+                height="720"
+                color="0x0000">
+
+                <button
+                    id="playBtn"
+                    text="Play Video"
+                    translation="[100,360]" />
+            </rectangle>
+        </Group>
+        <Video id="player" visible="false"> </Video>
+    </children>
+</component>

@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="Mainscene" extends="Scene"  >
+    <interface>
+        <field id="showSignUp" type="bool" alias="SignInPage.showSignUpPage" onchange = "showsignupscreen" />
+        <field id="showSignIn" type="bool" alias="SignUpPage.showSignInPage" onchange = "showsigninscreen" />
+        <field id="showHomeSignIn" type="bool" alias="SignInPage.showHomePage" onchange = "showhomescreen" />
+        <field id="showHomeSignUp" type="bool" alias="SignUpPage.showHomePage" onchange = "showhomescreen" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/Mainscene.brs" />
+    <children>
+        <Rectangle
+            id="maskBg"
+            width="1280"
+            height="720"
+            color="0x000000"
+            opacity="0.5"/>
+        <SignInPage
+            id="SignInPage" visible="false">
+        </SignInPage>
+        <SignUpPage
+            id="SignUpPage" visible="false">
+        </SignUpPage>
+        <HomePage
+            id="HomePage" visible="false">
+        </HomePage>
+    </children>
+</component>

@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "widgetNodeExample" extends = "Scene" initialFocus = "pinpad" >
+  <script type = "text/brightscript" uri="pkg:/components/widgetNode.brs"/>
+  <children > 
+    <label
+      text="Keyboard"
+      width="200"
+      height="100"
+      translation="[169,10]"/>   
+    <rectangle
+        id="bgKeyboard"
+        width="942"
+        height="302.667"
+        color="0x000000"
+        translation="[169,50]">      
+      <Keyboard 
+        id = "Keyboard"
+        keyColor="0xffffff"
+        focusedKeyColor="0x131E3A"
+        showTextEditBox="true"
+        height="250"	 />
+    </rectangle>
+    <label
+      text="PinPad"
+      width="200"
+      height="100"
+      translation="[450,370]"/>
+    <rectangle
+        id="bgPinpad"
+        width="300"
+        height="315"
+        color="0x000000"
+        translation="[450,400]">      
+      <PinPad
+        id = "pinpad"
+        translation="[15,15]"/>
+    </rectangle>
+    <!-- <BusySpinner 
+      id = "exampleBusySpinner"
+      visible = "true" /> -->
+  </children>
+</component>

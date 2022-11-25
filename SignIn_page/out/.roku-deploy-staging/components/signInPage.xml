@@ -1,0 +1,114 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="SignInPage" extends="Group" >
+    <interface>
+        <field id ="showSignUpPage" type = "bool" />
+        <field id="showHomePage" type="bool" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/signInPage.brs" />
+    <children>        
+        <group id="SignInGrp" visible="true">
+            <Rectangle
+                id="BgsignIn"
+                width="280"
+                height="420"
+                color="0x000000"
+                translation="[500,150]" >
+                <Label
+                    id="pagetitle"
+                    width="280"
+                    height="50"
+                    text="Sign In"
+                    color="0xEF6C2E"
+                    translation="[0,20]"
+                    horizAlign = "center"
+                    vertAlign = "center"> 
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="25"/>
+                </Label>
+                <Label
+                    id="usernametitle"
+                    text="Email Id/Username"
+                    color="0xEF6C2E"
+                    translation="[20,100]"> 
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="15"/>
+                </Label>
+                <TextEditBox 
+                    id = "SIusername" 
+                    width = "240"
+                    height="40"
+                    translation="[20,125]"/>
+                <Button 
+                    id="usernameBtn"
+                    iconUri="pkg:/images/tra.png"
+                    focusBitmapUri="pkg:/images/tra.png"
+                    focusedIconUri="pkg:/images/tra.png" />       
+                <Label
+                    id="passwordtitle"
+                    text="Password"
+                    color="0xEF6C2E"
+                    translation="[20,175]"> 
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="15"/>
+                </Label>                    
+                <TextEditBox 
+                    id = "SIpassword" 
+                    width = "240"
+                    height="40"
+                    translation="[20,200]"
+                    secureMode="true"/> 
+                <Button 
+                    id="passwordeBtn"
+                    iconUri="pkg:/images/tra.png"
+                    focusBitmapUri="pkg:/images/tra.png"
+                    focusedIconUri="pkg:/images/tra.png" />   
+            <Rectangle id="whiteRect" height="0" width="0" color="#ffffff" translation="[0,0]">
+				<Rectangle id="blackRect" height="0" width="0" color="#000000" translation="[2,2]"/>
+			</Rectangle>                
+                <Rectangle
+                    id="signInBtnRect"
+                    width="140"
+                    height="40"
+                    color="0xEF6C2E"
+                    translation="[70,270]">                
+                    <Label 
+                        id="signInLabel" 
+                        text="Sign In" 
+                        width="140" 
+                        height="40"
+                        color="0x000000"
+                        horizAlign = "center"
+                        vertAlign = "center">
+                        <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="12"/>
+                    </Label>
+                    <Button 
+                        id="signInBtn"
+                        minwidth="140"
+                        height="40"
+                        iconUri="pkg:/images/tra.png"
+                        focusBitmapUri="pkg:/images/tra.png"
+                        focusedIconUri="pkg:/images/tra.png" />
+                </Rectangle> 
+                <Label
+                    id="signupTitle"
+                    text="Create a New Account"
+                    translation="[70,320]">
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="12"/>
+                </Label>               
+                <Button 
+                    id="signupPgBtn"
+                    minwidth="5"
+                    height="15"                    
+                    iconUri="pkg:/images/tra.png"
+                    focusBitmapUri="pkg:/images/tra.png"
+                    focusedIconUri="pkg:/images/tra.png"
+                    translation="[120,343]">
+                    <Label 
+                        id="signupPgLabel"
+                        text="Sign Up" 
+                        color="0xffff"
+                        translation="[5,0]" >
+                        <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="12"/>
+                    </Label>
+                </Button>
+            </Rectangle>
+        </group>
+    </children>
+</component>

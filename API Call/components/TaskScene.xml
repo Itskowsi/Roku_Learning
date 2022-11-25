@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "TaskUrl" extends = "Group" >
+  <script type = "text/brightscript" uri="TaskScene.brs" />
+  <children>
+    <group id="nodeGroup" visible="true">
+        <rectangle
+            id="Bgrect" 
+            color="0x00000"
+            width="800"
+            height="300"
+            translation="[240,240]">
+            <label
+                id="label1"
+                translation="[270,50]"/>
+            <label
+                id="label2"
+                translation="[270,100]"/>
+            <label
+                id="label3"
+                translation="[270,150]"/>
+            <label
+                id="label4"
+                translation="[270,200]"/>
+            <label
+                id="label5"
+                translation="[270,250]"/>
+        </rectangle>
+     </group>
+  </children>
+</component>
