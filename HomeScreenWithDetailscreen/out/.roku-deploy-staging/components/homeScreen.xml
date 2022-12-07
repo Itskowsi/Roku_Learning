@@ -3,6 +3,8 @@
     <script type="text/brightscript" uri="homeScreen.brs" />
     <interface>
         <field id="ShowDetailScreen" type="bool" />
+        <field id="parseApi" type="bool" onChange="startParseApi" />
+        <field id="contentData" type="node" />
         <field id="rowItemFocused" type="intArray" alias="RowListScene.rowItemFocused" onChange="OnFocused"/>
 		<field id="rowItemSelected" type="intArray" alias="RowListScene.rowItemSelected" onChange="OnSelected"/>
 	</interface>
@@ -96,7 +98,7 @@
             <group id="RowlistGrp">
                 <label
                     id="Rowlistlabel"
-                    text="New Releases" 
+                    text="Trending Movies" 
                     width="1280"
                     height="500"
                     translation="[50,320]"

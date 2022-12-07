@@ -7,5 +7,7 @@
         <field id="description" type="string"/>
 		<field id="hdPosterURL" type="string"/>
 		<field id="sdPosterURL" type="string"/>
+		<field id="contentId" type="integer" />
+		<field id="itemType" type="integer" />
 	</interface>
 </component>

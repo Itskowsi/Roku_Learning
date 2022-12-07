@@ -4,13 +4,16 @@ sub init()
     m.movieTitle = m.top.findNode("movieTitle")
     m.movieSubTitle = m.top.findNode("movieSubTitle")
     m.movieDetail = m.top.findNode("movieDetail")
+    m.top.setFocus(true)
+end sub
+
+function startParseApi()
+    m.top.parseApi=false
     m.readContentTask = CreateObject("roSGNode","TaskAPI")
     m.readContentTask.observefield("content","loadJson")
     m.readContentTask.contenturi="https://api.tentkotta.com/tkapi/v1/movie/getTrendingMoviesList"
     m.readContentTask.control ="RUN"
-
-    m.top.setFocus(true)
-end sub
+end function
 
 function loadJson()
     json = m.readContentTask.content
@@ -23,6 +26,8 @@ function loadJson()
         itemNode.description=item.description
         itemNode.hdPosterURL = item.deviceImage
         itemNode.sdPosterUrl=item.profileImage
+        itemNode.contentId=item.contentId
+        itemNode.itemType=item.itemType
         shelfNode.appendChild(itemNode)
     end for
     parentNode.appendChild(shelfNode)
@@ -35,13 +40,11 @@ Sub OnFocused()
 	m.BannerImage.uri = OnRowlistFocuse.sdPosterURL
     m.movieTitle.text= OnRowlistFocuse.title
     m.movieSubTitle.text = OnRowlistFocuse.subtitle
-    m.movieDetail.text = OnRowlistFocuse.description
-    
+    m.movieDetail.text = OnRowlistFocuse.description    
 End Sub
 
 Sub OnSelected()
-	' OnRowlistSelected = m.RowListScene.content.getChild(m.top.rowItemSelected[0]).getChild(m.top.rowItemSelected[1])
-    
-	' m.top.contentData = OnRowlistSelected
+	OnRowlistSelected = m.RowListScene.content.getChild(m.top.rowItemSelected[0]).getChild(m.top.rowItemSelected[1])    
+	m.top.contentData = OnRowlistSelected
     m.top.ShowDetailScreen = true
 End Sub

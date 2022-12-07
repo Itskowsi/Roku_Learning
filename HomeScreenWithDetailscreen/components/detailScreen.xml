@@ -1,6 +1,10 @@
 <?xml version = "1.0" encoding = "utf-8" ?>
 <component name="DetailScreen" extends="group">
     <script type="text/brightscript" uri="detailScreen.brs" />
+    <interface>
+        <field id="parseApi" type="bool" onChange="detailApi" />
+        <field id="contentData" type="node" />
+    </interface>
     <children>
         <group id="detailScreenGrp" >
             <poster
@@ -9,7 +13,6 @@
                 height="720"
                 loadheight="720"
                 loadwidth="1280"
-                uri="https://w8v9p9p5.stackpathcdn.com/tentkotta-images/videos/profiles/DeSxS4Nl.jpg"
                 loadDisplayMode="limitSize"
                 translation="[0,0]" />
             <poster
@@ -23,7 +26,6 @@
                     id="movieTitle"
                     width="1280"
                     height="500"
-                    text="Title"
                     translation="[50,150]"
                     color="0xffffff">  
                     <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Bold.otf" size="35"/>
@@ -32,7 +34,6 @@
                     id="movieSubTitle"
                     width="1280"
                     height="500"
-                    text="Sub title"
                     translation="[50,200]"
                     color="0x808080">  
                     <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Bold.otf" size="15"/>
@@ -42,8 +43,7 @@
                     width="400"
                     wrap="true"
                     lineSpacing="0.0"
-                    height="200"
-                    text="A high school student named Light Turner discovers a mysterious notebook that has the power to kill anyone whose name is written within its pages, and launches a secret crusade to rid the world of criminals."
+                    height="100"
                     translation="[50,240]"
                     color="0xffffff">  
                     <Font role="font" uri="pkg://fonts/Open_Sans/OpenSans-Regular.ttf" size="15"/>
@@ -68,7 +68,7 @@
                     translation="[50,410]" />
             </group>
             <group id="btnGroup">
-                <Rectangle id="whiteRect" height="30" width="180" color="#ffffff" translation="[40,568]">
+                <Rectangle id="whiteRect" height="30" width="180" color="#ffffff" translation="[40,468]">
                     <Rectangle id="blackRect" height="26" width="176" color="#000000" translation="[2,2]"/>
                 </Rectangle>
                 <poster

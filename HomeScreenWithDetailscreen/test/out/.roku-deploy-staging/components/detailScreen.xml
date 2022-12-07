@@ -1,0 +1,138 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="DetailScreen" extends="group">
+    <script type="text/brightscript" uri="detailScreen.brs" />
+    <interface>
+        <field id="parseApi" type="bool" onChange="detailApi" />
+        <field id="contentData" type="node" />
+    </interface>
+    <children>
+        <group id="detailScreenGrp" >
+            <poster
+                id="bannerPoster"
+                width="1280"
+                height="720"
+                loadheight="720"
+                loadwidth="1280"
+                loadDisplayMode="limitSize"
+                translation="[0,0]" />
+            <poster
+                id="tentLogo"
+                height="80"
+                width="250"  
+                translation="[40,50]"
+                uri="pkg:/images/tent.png" />
+            <group id="labelGrp">
+                <label
+                    id="movieTitle"
+                    width="1280"
+                    height="500"
+                    translation="[50,150]"
+                    color="0xffffff">  
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Bold.otf" size="35"/>
+                </label>
+                <label
+                    id="movieSubTitle"
+                    width="1280"
+                    height="500"
+                    translation="[50,200]"
+                    color="0x808080">  
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Bold.otf" size="15"/>
+                </label>
+                <label
+                    id="movieDetail"
+                    width="400"
+                    wrap="true"
+                    lineSpacing="0.0"
+                    height="100"
+                    translation="[50,240]"
+                    color="0xffffff">  
+                    <Font role="font" uri="pkg://fonts/Open_Sans/OpenSans-Regular.ttf" size="15"/>
+                </label>
+                <MultiStyleLabel 
+                    id="director"
+                    width="400"
+                    height="50"
+                    wrap="true"
+                    translation="[50,350]" />
+                <MultiStyleLabel 
+                    id="starring"
+                    width="400"
+                    height="50"
+                    wrap="true"
+                    translation="[50,380]" />
+                <MultiStyleLabel 
+                    id="Genres"
+                    width="400"
+                    height="50"
+                    wrap="true"
+                    translation="[50,410]" />
+            </group>
+            <group id="btnGroup">
+                <Rectangle id="whiteRect" height="30" width="180" color="#ffffff" translation="[40,468]">
+                    <Rectangle id="blackRect" height="26" width="176" color="#000000" translation="[2,2]"/>
+                </Rectangle>
+                <poster
+                    id="playposter"
+                    visible="true"
+                    height="15"
+                    width="15"
+                    uri="pkg:/images/play2x.png"
+                    translation="[50,475]" />
+                <label
+                    id="playlabel"
+                    text="Play this Movie"
+                    width="300"
+                    translation="[80,473]">
+					<Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="17"/>
+                </label>
+                <Button
+                    id="playbtn" 
+                    focusBitmapUri="pkg:/images/tra.png"
+					iconUri="pkg:/images/tra.png"
+					focusedIconUri="pkg:/images/tra.png"
+                    translation="[50,468]"/>
+                <poster
+                    id="likeposter"
+                    visible="true"
+                    height="15"
+                    width="15"
+                    uri="pkg:/images/like.png"
+                    translation="[50,525]" />
+                <label
+                    id="likelabel"
+                    text="Rate this Movie"
+                    width="300"
+                    translation="[80,523]">
+					<Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="17"/>
+                </label>
+                <Button
+                    id="likebtn" 
+                    focusBitmapUri="pkg:/images/tra.png"
+					iconUri="pkg:/images/tra.png"
+					focusedIconUri="pkg:/images/tra.png"
+                    translation="[50,528]"/>
+
+                <poster
+                    id="watchlistposter"
+                    visible="true"
+                    height="15"
+                    width="15"
+                    uri="pkg:/images/plusIcon.png"
+                    translation="[50,575]" />
+                <label
+                    id="watchlistlabel"
+                    text="Add to Watchlist"
+                    width="300"
+                    translation="[80,573]">
+					<Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Medium.otf" size="17"/>
+                </label>
+                <Button
+                    id="watchlistbtn" 
+                    focusBitmapUri="pkg:/images/tra.png"
+					iconUri="pkg:/images/tra.png"
+					focusedIconUri="pkg:/images/tra.png"
+                    translation="[50,578]"/>
+            </group>
+        </group>
+    </children>
+</component>

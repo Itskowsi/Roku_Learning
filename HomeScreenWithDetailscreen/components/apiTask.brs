@@ -24,5 +24,5 @@ function getContent()
         end if
     end if
     m.top.content=jsonResponse
-    print"jsonResponse============"jsonResponse
+    ' print"jsonResponse============"jsonResponse
 end function
