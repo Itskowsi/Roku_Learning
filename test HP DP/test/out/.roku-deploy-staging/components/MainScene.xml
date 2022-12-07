@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="MainScene.brs" />
+    <interface>
+        <field id="showDetailScreen" type="bool" alias="HomeScreen.ShowDetailScreen" onChange="ShowDetailScreen" />
+    </interface>
+    <children>
+        <HomeScreen
+            id="HomeScreen" 
+            visible="false">
+        </HomeScreen>
+        <DetailScreen
+            id="DetailScreen" 
+            visible="false">
+        </DetailScreen>
+    </children>
+</component>

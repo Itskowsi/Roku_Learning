@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="ListContentItem" extends="Group">
+    <script type="text/brightscript" uri="listContentItem.brs" />
+    <interface>
+        <field id="itemContent" type="node" onChange="showcontent" />
+        <field id="focusPercent" type="float" onChange="showfocus" />
+        <field id="rowFocusPercent" type="float" onChange="showrowfocus" />
+    </interface>
+    <children>
+        <Poster
+            id = "itemposter"
+            translation="[10, 10]"
+            width="200"
+            height="300"
+            scaleRotateCenter = "[ 75.0, 150.0 ]">
+        <Rectangle
+            id="itemMask"
+            color="0x000000"
+            width="200"
+            height="300"
+            scaleRotateCenter = "[ 75.0, 150.0 ]"/>
+        </Poster>
+    </children>
+</component>

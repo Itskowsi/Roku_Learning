@@ -1,0 +1,123 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name="HomeScreen" extends="Group" initialFocus="RowListscene">
+    <script type="text/brightscript" uri="homeScreen.brs" />
+    <interface>
+        <field id="ShowDetailScreen" type="bool" />
+        <field id="parseApi" type="bool" onChange="startParseApi" />
+        <field id="contentData" type="node" />
+        <field id="rowItemFocused" type="intArray" alias="RowListScene.rowItemFocused" onChange="OnFocused"/>
+		<field id="rowItemSelected" type="intArray" alias="RowListScene.rowItemSelected" onChange="OnSelected"/>
+	</interface>
+    <children>
+        <group id="MainGrp">
+            <poster
+                id="BannerImage"
+                visible="true"
+                width="1280"
+                height="720"
+                loadheight="925"
+                loadwidth="1920"
+                loadDisplayMode="limitSize"
+                translation="[0,0]" />
+            <Rectangle
+                id="BannerRect"
+                width="1280"
+                height="720"
+                translation="[0,0]"
+                color="0x0000"
+                opacity="0.25" />
+            <group id="IconGroup">
+                <Rectangle
+                    id="FocusRect"
+                    height="4"
+                    width="50"
+                    color="0xEF6C2E"
+                    translation="[155,80]" />
+                <poster
+                    id="searchIcon"
+                    visible="true"
+                    uri="pkg:/images/searchIcon.png"
+                    height="20"
+                    width="20"
+                    translation="[90,50]" />
+                <Button
+                    id="SearchButton" 
+                    translation="[90,50]"
+                    focusBitmapUri="pkg:/images/tra.png"
+                    iconUri="pkg:/images/tra.png"
+                    focusedIconUri="pkg:/images/tra.png"/>
+                <poster
+                    id="homeIcon"
+                    visible="true"
+                    uri="pkg:/images/HomeIcon.png"
+                    height="20"
+                    width="20"
+                    translation="[170,50]" />
+                <Button
+                    id="HomeButton" 
+                    translation="[170,50]"
+                    focusBitmapUri="pkg:/images/tra.png"
+                    iconUri="pkg:/images/tra.png"
+                    focusedIconUri="pkg:/images/tra.png"/>
+                <poster
+                    id="tentkottaIcon"
+                    visible="true"
+                    uri="pkg:/images/tent.png"
+                    height="60"
+                    width="140"
+                    translation="[1100,40]"/>
+            </group>
+            <group id="labelGrp">
+                <label
+                    id="movieTitle"
+                    width="1280"
+                    height="500"
+                    translation="[50,100]"
+                    color="0xffffff">  
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Bold.otf" size="30"/>
+                </label>
+                <label
+                    id="movieSubTitle"
+                    width="1280"
+                    height="500"
+                    translation="[50,160]"
+                    color="0x808080">  
+                    <Font role="font" uri="pkg://fonts/intercufonfonts/Inter-Bold.otf" size="13"/>
+                </label>
+                <label
+                    id="movieDetail"
+                    width="400"
+                    wrap="true"
+                    lineSpacing="0.0"
+                    height="100"
+                    translation="[50,200]"
+                    color="0xffffff">  
+                    <Font role="font" uri="pkg://fonts/Open_Sans/OpenSans-Regular.ttf" size="15"/>
+                </label>
+            </group>
+            <group id="RowlistGrp">
+                <label
+                    id="Rowlistlabel"
+                    text="New Releases" 
+                    width="1280"
+                    height="500"
+                    translation="[50,320]"
+                    color="0xffffff">  
+                    <Font role="font" uri="pkg://fonts/Open_Sans/OpenSans-Bold.ttf" size="23"/>
+                </label>
+                <RowList
+                    id = "RowListScene"
+                    translation="[50,350]"
+                    itemComponentName="ListContentItem"
+                    numRows="5"
+                    itemSize="[1600,1000]"
+                    rowItemSize="[ [300,5] ]"
+                    itemSpacing="[0,40]"
+                    showRowLabel="true"
+                    drawFocusFeedback="false"
+                    vertFocusAnimationStyle="fixedFocus"
+                    rowfocusanimationstyle="fixedFocus"/>
+            </group>
+        </group>
+    </children>
+</component>
