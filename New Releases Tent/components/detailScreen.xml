@@ -5,7 +5,8 @@
         <field id="parseApi" type="bool" onChange="detailApi" />
         <field id="contentData" type="node" />
     </interface>
-    <children>
+    <children>        
+        <GlobalInitializer id="globalInitializer"/>
         <group id="detailScreenGrp" >
             <poster
                 id="bannerPoster"

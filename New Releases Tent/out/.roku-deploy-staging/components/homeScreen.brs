@@ -8,11 +8,11 @@ sub init()
 end sub
 
 function startParseApi()
+    ' m.readContentTask.contenturi="https://api.tentkotta.com/tkapi/v1/movie/getTrendingMoviesList"
     m.top.parseApi=false
     m.readContentTask = CreateObject("roSGNode","TaskAPI")
     m.readContentTask.observefield("content","loadJson")
-    ' m.readContentTask.contenturi="https://api.tentkotta.com/tkapi/v1/movie/getTrendingMoviesList"
-    m.readContentTask.contenturi="https://staging-api.tentkotta.com/tkapi/v1/getGroupDetails/1"
+    m.readContentTask.contenturi=m.global.baseUrl + "v1/getGroupDetails/1"
     m.readContentTask.control ="RUN"
 end function
 

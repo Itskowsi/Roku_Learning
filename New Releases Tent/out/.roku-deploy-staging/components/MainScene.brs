@@ -12,6 +12,8 @@ end sub
 function loadJson()
     json = m.readContentTask.content
     if json.responseCode = "200"
+        m.global.accessToken=json.response
+        print "-------------------------------------->>>>json.response"json.response
         m.HomeScreen.parseApi=true
         m.HomeScreen.visible=true
         m.HomeScreen.setFocus(true)

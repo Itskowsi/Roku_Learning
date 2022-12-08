@@ -11,7 +11,7 @@
                 id="bannerPoster"
                 width="1280"
                 height="720"
-                loadheight="720"
+                loadheight="720" 
                 loadwidth="1280"
                 loadDisplayMode="limitSize"
                 translation="[0,0]" />
@@ -52,19 +52,16 @@
                     id="director"
                     width="400"
                     height="50"
-                    wrap="true"
                     translation="[50,350]" />
                 <MultiStyleLabel 
                     id="starring"
                     width="400"
                     height="50"
-                    wrap="true"
                     translation="[50,380]" />
                 <MultiStyleLabel 
                     id="Genres"
                     width="400"
                     height="50"
-                    wrap="true"
                     translation="[50,410]" />
             </group>
             <group id="btnGroup">

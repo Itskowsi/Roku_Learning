@@ -1,7 +1,7 @@
 sub init()
     m.readContentTask = CreateObject("roSGNode","TaskAPI")
     m.readContentTask.observefield("content","loadJson")
-    m.readContentTask.contenturi="https://staging-api.tentkotta.com/tkapi/v6/tkapi/generateToken"
+    m.readContentTask.contenturi=m.global.accessToken+"v6/tkapi/generateToken"
     m.readContentTask.control ="RUN"
     m.HomeScreen=m.top.findNode("HomeScreen")
     m.RowListScene=m.top.findNode("RowListscene")
@@ -12,6 +12,7 @@ end sub
 function loadJson()
     json = m.readContentTask.content
     if json.responseCode = "200"
+        m.global.accessToken=json.response
         m.HomeScreen.parseApi=true
         m.HomeScreen.visible=true
         m.HomeScreen.setFocus(true)

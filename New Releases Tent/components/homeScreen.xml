@@ -9,6 +9,7 @@
 		<field id="rowItemSelected" type="intArray" alias="RowListScene.rowItemSelected" onChange="OnSelected"/>
 	</interface>
     <children>
+        <GlobalInitializer id="globalInitializer"/>
         <group id="MainGrp">
             <poster
                 id="BannerImage"

@@ -9,6 +9,7 @@
 		<field id="rowItemSelected" type="intArray" alias="RowListScene.rowItemSelected" onChange="OnSelected"/>
 	</interface>
     <children>
+        <GlobalInitializer id="globalInitializer"/>
         <group id="MainGrp">
             <poster
                 id="BannerImage"
@@ -98,7 +99,7 @@
             <group id="RowlistGrp">
                 <label
                     id="Rowlistlabel"
-                    text="Trending Movies" 
+                    text="New Releases" 
                     width="1280"
                     height="500"
                     translation="[50,320]"

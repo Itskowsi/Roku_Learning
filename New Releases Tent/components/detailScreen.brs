@@ -24,15 +24,11 @@ function detailApi()
 	if itemType = "0"
 		itemType = "1"
 	end if
-    print "--------------------------------------------->>>>>itemType"itemType
     contentId = m.top.contentData.contentId.ToStr()
-    print "--------------------------------------------->>>>>contentId"contentId
 
     m.readContentTask = CreateObject("roSGNode","TaskAPI")
     m.readContentTask.observefield("content","loadJson")
-    ' m.readContentTask.contenturi="https://staging-api.tentkotta.com/tkapi/v1/getItemDetails/1/2052/MTI2MzEzfGZkNTdmODM4M2VjYTNkMDl8QW5kcm9pZCBTREsgYnVpbHQgZm9yIHg4Ng=="
-    ' m.readContentTask.contenturi="https://staging-api.tentkotta.com/tkapi/v1/getItemDetails/1/2045/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzAzMDc0NTEsImV4cCI6MTY3MDM5Mzg1MX0.oUKH9mCX0C7YhXC4C8cbsIGxr-Q-aXK_RoFPNV68jys"
-    m.readContentTask.contenturi="https://staging-api.tentkotta.com/tkapi/v1/getItemDetails/"+itemType+"/"+contentId+"/MTI2MzEzfGZkNTdmODM4M2VjYTNkMDl8QW5kcm9pZCBTREsgYnVpbHQgZm9yIHg4Ng=="
+    m.readContentTask.contenturi=m.global.baseUrl+"v1/getItemDetails/"+itemType+"/"+contentId+"/"+m.global.accessToken
     m.readContentTask.control ="RUN"
 end function
 
